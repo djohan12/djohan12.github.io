@@ -1,0 +1,34 @@
+.cover {
+    padding-top: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+.title, .subtitle {
+    font-family: 'Courier New', monospace; 
+    color: #6aff6a;                        
+    letter-spacing: 1.5px;
+    text-shadow: 0 0 4px #4caf50, 
+                 0 0 8px rgba(0,255,0,0.5); 
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 50px;
+}
+
