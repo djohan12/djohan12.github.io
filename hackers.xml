@@ -4,11 +4,18 @@
     <title>Hackers in the Bazaar</title>
     <link>https://djohan12.github.io/hackers.html</link>
     <description>Posts for Hackers in the Bazaar</description>
+
+    <item>
+      <title>Reading 05: Coding is Basically a 0x0000ff Collar Job </title>
+      <link>https://djohan12.github.io/hackers.html</link>
+      <description>Post for Reading05</description>
+      <pubDate>Sat, 4 Oct 2025 20:45:00 EST</pubDate>
+    </item>
     
     <item>
       <title>Reading 04: Nerds, Hackers, and Asian Tiger Moms </title>
       <link>https://djohan12.github.io/hackers.html</link>
-      <description>Post for Reading03</description>
+      <description>Post for Reading04</description>
       <pubDate>Sun, 28 Sep 2025 23:30:00 EST</pubDate>
     </item>
 
