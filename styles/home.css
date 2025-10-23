@@ -32,7 +32,6 @@
   height: auto;
 }
 
-/* --- EDUCATION --- */
 .education {
   padding: 60px 10%;
   background-color: #ffffff;
@@ -69,7 +68,6 @@
   color: #1d3557;
 }
 
-/* --- PROJECTS --- */
 .projects_section {
   padding: 80px 10%;
   background: #f8fafc;
@@ -120,7 +118,6 @@
   color: #333;
 }
 
-/* --- SKILLS SECTION --- */
 .skills {
     padding: 60px 10%;
     background-color: #ffffff;
@@ -162,7 +159,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px; /* space between skill boxes */
+    gap: 30px; 
 }
 
 .skill {
@@ -179,7 +176,7 @@
 
 .skill_icon {
     height: 50px;
-    width: 50px;
+    width: auto;
 }
 
 .skill_name {
@@ -189,8 +186,6 @@
 }
 
 
-
-/* --- FOOTER --- */
 .footer {
   background-color: #1d3557;
   color: white;

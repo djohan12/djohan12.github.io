@@ -5,7 +5,6 @@ body {
   color: #222;
 }
 
-/* --- NAVIGATION --- */
 .navigation-bar {
   display: flex;
   justify-content: space-between;
