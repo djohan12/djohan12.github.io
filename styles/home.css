@@ -1,86 +1,200 @@
 .intro {
-    display: flex;
-    height: 100vh;
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px;
+  background: linear-gradient(to bottom right, #e6f0ff, #ffffff);
 }
 
-
-.intro-left,
-.intro-right {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.intro-text h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 70px;
+  color: #1d3557;
+  margin-bottom: 10px;
 }
 
-.intro-text {
-    font-family: "Dancing Script", cursive;
-    text-align: center;
-    color: black;
-    font-size: 36px;
-    text-shadow: 1px 1px 1px #000;
+.intro-text p {
+  font-size: 20px;
+  color: #444;
 }
 
 .summit-wrapper {
-    display: inline-block;
-    background-color: white; /* or a background image, gradient, etc. */
-    padding: 30px;
-    border-radius: 30px;
-    position: relative;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 .summit {
-    display: block;
-    height:750px;
-    width: auto;
-    object-fit: cover;
-    border-radius: 15px;
-
-
+  border-radius: 15px;
+  width: 500px;
+  height: auto;
 }
 
-.footer {
-    background-color: black;
-    color: white;
-    width: 100%;
-    height: 50px;
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 10;
+/* --- EDUCATION --- */
+.education {
+  padding: 60px 10%;
+  background-color: #ffffff;
 }
 
+.education h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.education h2 {
+  color: #1d3557;
+}
+
+.courses_section h3 {
+  margin-top: 30px;
+}
+
+.courses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 4px;
+  font-size: 15px;
+  margin-top: 8px;
+}
+
+.clickable {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #457b9d;
+}
+.clickable:hover {
+  color: #1d3557;
+}
+
+/* --- PROJECTS --- */
 .projects_section {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  padding: 80px 10%;
+  background: #f8fafc;
+  text-align: center;
+}
+
+.projects_section h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #1d3557;
 }
 
 .projects {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
 }
 
 .project {
-    width: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;     
-    text-align: center;
-    border-radius: 20px;
-    border-style: solid;
-    border-color: black;
-    overflow: hidden; 
-    cursor: pointer;
+  width: 320px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
 }
 
 .project .cover {
-    width: fit-content;
-    height: 200px;
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  object-fit: cover;
 }
 
-.project .description {
-    font-family: Arial;
+.project h3 {
+  margin: 15px 0 8px 0;
+  color: #1d3557;
+}
+
+.project p {
+  font-size: 14px;
+  color: #333;
+}
+
+/* --- SKILLS SECTION --- */
+.skills {
+    padding: 60px 10%;
+    background-color: #ffffff;
+}
+
+.skills h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #1d3557;
+}
+
+.skill-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border: 2px solid #1d3557;
+    background-color: #f8fafc;
+    color: #1d3557;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: all 0.2s;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background-color: #1d3557;
+    color: white;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* space between skill boxes */
+}
+
+.skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    gap: 15px;          
+    border: 2px solid #1d3557;
+    border-radius: 10px;
+    background-color: #f8fafc;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.skill_icon {
+    height: 50px;
+    width: 50px;
+}
+
+.skill_name {
+    font-size: 24px;
+    line-height: 1;
+    margin: 0;
+}
+
+
+
+/* --- FOOTER --- */
+.footer {
+  background-color: #1d3557;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
 }

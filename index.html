@@ -1,153 +1,303 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles/style.css">
-        <link rel="stylesheet" href="styles/home.css">
-    </head>
-    <body>
-        <div class="navigation-bar">
-            <p>
-                Daniel Johan
-            </p>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daniel Johan | Portfolio</title>
 
-            <button class="home" onclick="window.open('index.html')">
-                Home
-            </button>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
 
-            <button class="resume" title="Download Resume" onclick="window.open('files/Daniel Johan - Resume.pdf')">
-                Resume
-            </button>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+  </head>
 
-            <button class="github" title="Github" onclick="window.open('https://github.com/djohan12')">
-                <img src="images/github.png">
-            </button>
 
-            <button class="linkedin" title="LinkedIn" onclick="window.open('https://www.linkedin.com/in/daniel-johan-739a55267/')">
-                <img src="images/linkedin.png">
-            </button>
+  <body>
+    <nav class="navigation-bar">
+      <div class="nav-left">
+        <p class="name">Daniel Johan</p>
+      </div>
+      <div class="nav-right">
+        <button onclick="window.open('index.html')">Home</button>
+        <button title="Download Resume" onclick="window.open('files/Daniel Johan - Resume.pdf')">Resume</button>
+        <button title="GitHub" onclick="window.open('https://github.com/djohan12')">
+          <img src="images/github.png" alt="GitHub" />
+        </button>
+        <button title="LinkedIn" onclick="window.open('https://www.linkedin.com/in/daniel-johan-739a55267/')">
+          <img src="images/linkedin.png" alt="LinkedIn" />
+        </button>
+      </div>
+    </nav>
+
+    <section class="intro">
+      <div class="intro-left">
+        <div class="intro-text">
+          <h1>Hello, World!</h1>
+          <p>Welcome to my personal portfolio — currently under construction!</p>
+        </div>
+      </div>
+
+      <div class="intro-right">
+        <div class="summit-wrapper">
+          <img class="summit" src="images/Mt_Fuji_Summit.jpg" alt="Mt. Fuji Summit" />
+        </div>
+      </div>
+    </section>
+
+    <section class="education">
+      <h1>Education</h1>
+      <h2>University of Notre Dame</h2>
+      <p>B.S. in Computer Science and Engineering <span class="date">(Expected May 2026)</span></p>
+      <p>GPA: 3.92/4.00 | Dean’s List</p>
+
+        <div class="courses_section">
+    <h3>Relevant Courses</h3>
+    <div class="courses">
+        <p class="course">CSE 40166 - Computer Graphics<br>(Fall 2025)</p>
+        <p class="course">CSE 40657 - Natural Language Processing<br>(Fall 2025)</p>
+        <p class="course" onclick="window.location.href='hackers.html'" style="cursor: pointer;">
+            CSE 40482 - Hackers in the Bazaar<br>(Fall 2025)
+        </p>
+        <p class="course">CSE 40113 - Design and Analysis of Algorithms<br>(Spring 2025)</p>
+        <p class="course">CSE 40439 - Game Development<br>(Spring 2025)</p>
+        <p class="course">CSE 40535 - Computer Vision<br>(Spring 2025)</p>
+        <p class="course">CSE 40567 - Computer Security<br>(Spring 2025)</p>
+        <p class="course">CSE 40647 - Data Science<br>(Spring 2025)</p>
+        <p class="course">CSE 40883 - Introduction to Robotics<br>(Spring 2025)</p>
+        <p class="course">CSE 30124 - Introduction to Artificial Intelligence<br>(Fall 2024)</p>
+        <p class="course">CSE 30151 - Theory of Computing<br>(Fall 2024)</p>
+        <p class="course">CSE 30321 - Computer Architecture<br>(Fall 2024)</p>
+        <p class="course">CSE 30341 - Operating System Principles<br>(Fall 2024)</p>
+        <p class="course">CSE 30872 - Programming Challenges<br>(Fall 2024)</p>
+        <p class="course">ACMS 30440 - Probability and Statistics<br>(Fall 2023)</p>
+        <p class="course">CSE 20221 - Logic Design<br>(Fall 2023)</p>
+        <p class="course">CSE 20289 - Systems Programming<br>(Fall 2023)</p>
+        <p class="course">CSE 20110 - Discrete Mathematics<br>(Fall 2023)</p>
+        <p class="course">CSE 20312 - Data Structures<br>(Fall 2023)</p>
+        <p class="course">CSE 20311 - Fundamentals of Computing<br>(Spring 2023)</p>
+        <p class="course">MATH 20580 - Intro to Linear Algebra & Differential Equations<br>(Spring 2023)</p>
+    </div>
+</div>
+
+    </section>
+
+    <section class="projects_section">
+      <h1>Projects</h1>
+      <div class="projects">
+        <div class="project">
+          <img class="cover" src="images/leanix_diagram.png" alt="Enterprise Architect Intern" />
+          <h3>Enterprise Architect Intern</h3>
+          <p>Designed and deployed a prototype AI agent integrating LeanIX APIs with OpenAI’s GPT models for automated enterprise architecture analysis and intelligent decision support.</p>
         </div>
 
-        
-        <div class="intro">
-            <div class="intro-left">
-                <div class="intro-text">
-                    <h1>Hello World</h1>
-                    <p> Under Construction! </p>
-                </div>
+        <div class="project">
+          <img class="cover" src="images/agent.png" alt="AI Research" />
+          <h3>Cognitive Agentic AI Research</h3>
+          <p>Developing and optimizing autonomous agent simulation models using LangChain, RAG, and OpenAI APIs, enhancing reasoning, reliability, and structured decision-making for search and rescue simulations.</p>
+        </div>
+
+        <div class="project">
+          <img class="cover" src="images/eyerobot.png" alt="Autonomous Vehicle" />
+          <h3>Autonomous Object Tracking Vehicle</h3>
+          <p>Programmed an autonomous robot car using a U-Net neural network for real-time object tracking, achieving 92% recognition accuracy through multithreaded video processing.</p>
+        </div>
+
+        <div class="project">
+            <img class="cover" src="images/pokemon.png" alt="Pokémon Type Classifier" />
+            <h3>Who's That Type?</h3>
+            <p>Developed and optimized multiple machine learning models to classify over 1,000 Pokémon into 18 unique elemental types using in-game statistical and categorical data.</p>
+        </div>
+
+        <div class="project">
+            <img class="cover" src="images/steampunk.png" alt="SteamPunk Discord Bot" />
+            <h3>SteamPunk Discord Bot</h3>
+            <p>Engineered a high-performance Discord bot in Go that integrates with the Steam Web API to fetch and analyze real-time player data through RESTful API endpoints.</p>
+        </div>
+
+        <div class="project">
+            <img class="cover" src="images/rfc.png" alt="Robotic Football Code Head" />
+            <h3>Robotic Football Code Head</h3>
+            <p>Led the design and programming of competitive robotic football systems, implementing sensor fusion, motion control algorithms, and real-time communication for autonomous play execution.</p>
+        </div>
+
+    </section>
+
+    <section class="skills">
+        <h2>Skills</h2>
+
+        <!-- Skill Filter Buttons -->
+        <div class="skill-filters">
+            <button class="filter-btn active" data-category="languages">Languages</button>
+            <button class="filter-btn" data-category="frameworks">Frameworks</button>
+            <button class="filter-btn" data-category="technical">Technical</button>
+            <button class="filter-btn" data-category="os">Operating Systems</button>
+            <button class="filter-btn" data-category="spoken_languages">Spoken Languages</button>
+            <button class="filter-btn" data-category="other">Other</button>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid">
+            <!-- Languages -->
+            <div class="skill" data-category="languages">
+                <img class="skill_icon" src="images/C.png">
+                <p class="skill_name">C</p>
+            </div>
+            <div class="skill" data-category="languages">
+                <img class="skill_icon" src="images/C++.png">
+                <p class="skill_name">C++</p>
+            </div>
+            <div class="skill" data-category="languages">
+                <img class="skill_icon" src="images/python.png">
+                <p class="skill_name">Python</p>
+            </div>
+            <div class="skill" data-category="languages">
+                <img class="skill_icon" src="images/java.png">
+                <p class="skill_name">Java</p>
+            </div>
+            <div class="skill" data-category="languages">
+                <img class="skill_icon" src="images/go.png">
+                <p class="skill_name">Go</p>
+            </div>
+            <div class="skill" data-category="languages">
+                <img class="skill_icon" src="images/html.png">
+                <p class="skill_name">HTML</p>
+            </div>
+            <div class="skill" data-category="languages">
+                <img class="skill_icon" src="images/css.png">
+                <p class="skill_name">CSS</p>
+            </div>
+            <div class="skill" data-category="languages">
+                <img class="skill_icon" src="images/javascript.png">
+                <p class="skill_name">JavaScript</p>
+            </div>
+            <div class="skill" data-category="languages">
+                <img class="skill_icon" src="images/matlab.png">
+                <p class="skill_name">Matlab</p>
             </div>
 
+            <!-- Frameworks/Libraries -->
+            <div class="skill" data-category="frameworks">
+                <img class="skill_icon" src="images/pydantic.png">
+                <p class="skill_name">Pydantic</p>
+            </div>
+            <div class="skill" data-category="frameworks">
+                <img class="skill_icon" src="images/pytorch.png">
+                <p class="skill_name">PyTroch</p>
+            </div>
+            <div class="skill" data-category="frameworks">
+                <img class="skill_icon" src="images/tensorflow.png">
+                <p class="skill_name">TensorFlow</p>
+            </div>
+            <div class="skill" data-category="frameworks">
+                <img class="skill_icon" src="images/opencv.png">
+                <p class="skill_name">OpenCV</p>
+            </div>
+            <div class="skill" data-category="frameworks">
+                <img class="skill_icon" src="images/sklearn.png">
+                <p class="skill_name">Scikit learn</p>
+            </div>
+            <div class="skill" data-category="frameworks">
+                <img class="skill_icon" src="images/pandas.png">
+                <p class="skill_name">pandas</p>
+            </div>
+            <div class="skill" data-category="frameworks">
+                <img class="skill_icon" src="images/flask.png">
+                <p class="skill_name">Flask</p>
+            </div>
+            <div class="skill" data-category="frameworks">
+                <img class="skill_icon" src="images/django.png">
+                <p class="skill_name">django</p>
+            </div>
+
+            <!-- Technical -->
+            <div class="skill" data-category="technical">
+                <img class="skill_icon" src="images/github.png">
+                <p class="skill_name">Git</p>
+            </div>
+            <div class="skill" data-category="technical">
+                <img class="skill_icon" src="images/rest.png">
+                <p class="skill_name">RESTful API</p>
+            </div>
+            <div class="skill" data-category="technical">
+                <img class="skill_icon" src="images/godot.png">
+                <p class="skill_name">Godot</p>
+            </div>
+            <div class="skill" data-category="technical">
+                <img class="skill_icon" src="images/cv.png">
+                <p class="skill_name">Computer Vision</p>
+            </div>
+            <div class="skill" data-category="technical">
+                <img class="skill_icon" src="images/datascience.png">
+                <p class="skill_name">Data Science</p>
+            </div>
+            <div class="skill" data-category="technical">
+                <img class="skill_icon" src="images/bash.png">
+                <p class="skill_name">Bash Scripting</p>
+            </div>
+            <div class="skill" data-category="technical">
+                <img class="skill_icon" src="images/jupyter.png">
+                <p class="skill_name">Jupyter Notebook</p>
+            </div>
+            <div class="skill" data-category="technical">
+                <img class="skill_icon" src="images/leanix.png">
+                <p class="skill_name">LeanIX</p>
+            </div>
+            <div class="skill" data-category="technical">
+                <img class="skill_icon" src="images/solidworks.png">
+                <p class="skill_name">Solidworks</p>
+            </div>
             
-            <div class="intro-right">
-                <div class="summit-wrapper">
-                    Placeholder
-                    <!--<img class="summit" src="images/Mt_Fuji_Summit.jpg">-->
-                </div>
+
+
+            <!-- Operating Systems -->
+            <div class="skill" data-category="os">
+                <img class="skill_icon" src="images/linux.png">
+                <p class="skill_name">Linux</p>
             </div>
-        </div>
-
-        <div class="education">
-            <h1>
-                Education
-            </h1>
-            <div class="courses_section">
-                <h2>
-                    Courses
-                </h2>
-                <div class="courses">
-                    <p class="course">
-                        &#8226; CSE 40166 - Computer Graphics (Fall 2025)
-                    </p>
-                    <p class="course">
-                        &#8226; CSE 40657 - Natural Language Processing (Fall 2025)
-                    </p>
-                    <p class="course" onclick="window.location.href='hackers.html'" style="cursor: pointer;">
-                        &#8226; CSE 40482 - Hackers in the Bazaar (Fall 2025)
-                    </p>
-                    <p class="course">
-                        &#8226; CSE 40113 - Design and Analysis of Algorithms (Spring 2025)
-                    </p>
-                    <p class="course">
-                        &#8226; CSE 40535 - Computer Vision (Spring 2025)
-                    </p>
-                    <p class="course">
-                        &#8226; CSE 40567 - Computer Security (Spring 2025)
-                    </p>
-                    <p class="course">
-                        &#8226; CSE 40647 - Data Science (Spring 2025)
-                    </p>
-                    <p class="course">
-                        &#8226; CSE 40883 - Introduction to Robotics (Spring 2025)
-                    </p>
-                    <p class="course">
-                        &#8226; CSE 30124 - Introduction to Artificial Intelligence (Fall 2024)
-                    </p>
-                    <p class="course">
-                        &#8226; CSE 30151 - Theory of Computing (Fall 2024)
-                    </p>
-                    <p class="course">
-                        &#8226; CSE 30321 - Computer Architecture (Fall 2024)
-                    </p>
-                    <p class="course">
-                        &#8226; CSE 30341 - Operating System Principles (Fall 2024)
-                    </p>
-                    <p class="course">
-                        &#8226; CSE 30872 - Programming Challenges (Fall 2024)
-                    </p>
-                    <p class="course">
-                        &#8226; CSE 20221 - Logic Design (Fall 2023)
-                    </p>
-                    <p class="course">
-                        &#8226; CSE 20289 - Systems Programming (Fall 2023)
-                    </p>
-                    <p class="course">
-                        &#8226; CSE 20110 - Discrete Mathematics (Fall 2023)
-                    </p>
-                    <p class="course">
-                        &#8226; CSE 20312 - Data Structures (Fall 2023)
-                    </p>
-                    <p class="course">
-                        &#8226; CSE 20311 - Fundamentals of Computing (Spring 2023)
-                    </p>
-                </div>
+            <div class="skill" data-category="os">
+                <img class="skill_icon" src="images/windows.png">
+                <p class="skill_name">Windows</p>
             </div>
-        </div>
-
-
-        <div class="projects_section">
-            <p>
-                    Projects
-            </p>
-            <div class="projects">
-                
-
-                <div class="project">
-                    <img class="cover" src="images/Lizard.png">
-
-                    <p class="title">
-                        Cognitive Agent Research
-                    </p>
-
-                    <p class="description">
-                        Researching the use of RAG memory models to create autonomous agents for Lockheed Martin
-                    </p>
-                </div>
+            <div class="skill" data-category="os">
+                <img class="skill_icon" src="images/raspberrypi.png">
+                <p class="skill_name">Raspberry Pi</p>
             </div>
-        </div>
-        
 
-        <script>
-            console.log('Hello World');
-        </script>
+            <!--Spoken Languages-->
+            <div class="skill" data-category="spoken_languages">
+                <img class="skill_icon" src="images/english.png">
+                <p class="skill_name">English (Fluent)</p>
+            </div>
 
-        <!--
-        <div class="footer">
-            <p class="credits">
-                Personal Information
-            </p>
+            <div class="skill" data-category="spoken_languages">
+                <img class="skill_icon" src="images/indonesian.png">
+                <p class="skill_name">Indonesian (Fluent)</p>
+            </div>
+
+            <div class="skill" data-category="spoken_languages">
+                <img class="skill_icon" src="images/chinese.png">
+                <p class="skill_name">Chinese (Intermediate)</p>
+            </div>
+
+            <div class="skill" data-category="spoken_languages">
+                <img class="skill_icon" src="images/japanese.png">
+                <p class="skill_name">Japanese (Beginner)</p>
+            </div>
+
+            <!--Other-->
+            
         </div>
-        -->
-    </body>
+    </section>
+
+
+
+
+    <footer class="footer">
+      <p>2025 Daniel Johan</p>
+    </footer>
+  </body>
+  <script src="scripts/skills.js"></script>
+
 </html>

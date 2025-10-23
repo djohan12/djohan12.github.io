@@ -13,27 +13,21 @@
         <link rel="stylesheet" href="styles/hackers.css">
     </head>
     <body>
-        <div class="navigation-bar">
-            <p>
-                Daniel Johan
-            </p>
-
-            <button class="home" onclick="window.open('index.html')">
-                Home
-            </button>
-
-            <button class="resume" title="Download Resume" onclick="window.open('files/Daniel Johan - Resume.pdf')">
-                Resume
-            </button>
-
-            <button class="github" title="Github" onclick="window.open('https://github.com/djohan12')">
-                <img src="images/github.png">
-            </button>
-
-            <button class="linkedin" title="LinkedIn" onclick="window.open('https://www.linkedin.com/in/daniel-johan-739a55267/')">
-                <img src="images/linkedin.png">
-            </button>
-        </div>
+        <nav class="navigation-bar">
+            <div class="nav-left">
+                <p class="name">Daniel Johan</p>
+            </div>
+            <div class="nav-right">
+                <button onclick="window.open('index.html')">Home</button>
+                <button title="Download Resume" onclick="window.open('files/Daniel Johan - Resume.pdf')">Resume</button>
+                <button title="GitHub" onclick="window.open('https://github.com/djohan12')">
+                <img src="images/github.png" alt="GitHub" />
+                </button>
+                <button title="LinkedIn" onclick="window.open('https://www.linkedin.com/in/daniel-johan-739a55267/')">
+                <img src="images/linkedin.png" alt="LinkedIn" />
+                </button>
+            </div>
+        </nav>
 
 
 
